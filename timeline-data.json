@@ -521,16 +521,7 @@
       "notes": "",
       "startDate": "2026-12-25",
       "endDate": "2026-12-25"
-    },
-    {
-      "id": "1769180198068",
-      "useCaseId": "1765293294888",
-      "title": "Internal meeting",
-      "isMilestone": false,
-      "notes": "",
-      "startDate": "2026-01-27",
-      "endDate": "2026-01-27"
     }
   ],
-  "lastModified": "2026-01-23T14:57:03.763Z"
+  "lastSync": "2026-01-27T16:00:25.107Z"
 }
