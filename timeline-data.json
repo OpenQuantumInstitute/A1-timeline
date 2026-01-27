@@ -546,7 +546,16 @@
       "notes": "",
       "startDate": "2026-01-28",
       "endDate": "2026-01-28"
+    },
+    {
+      "id": "1769531020380",
+      "useCaseId": "1765294365726",
+      "title": "CL OoO",
+      "isMilestone": false,
+      "notes": "",
+      "startDate": "2026-01-30",
+      "endDate": "2026-01-30"
     }
   ],
-  "lastSync": "2026-01-27T16:23:13.421Z"
+  "lastSync": "2026-01-27T16:23:45.899Z"
 }
