@@ -15,13 +15,6 @@
       "description": ""
     },
     {
-      "id": "1765293855512",
-      "name": "UC-202",
-      "cohort": "UC-2XX",
-      "color": "#669c35",
-      "description": ""
-    },
-    {
       "id": "1765293887777",
       "name": "UC-104",
       "cohort": "UC-1XX 2",
@@ -333,31 +326,6 @@
       "endDate": "2026-02-03"
     },
     {
-      "id": "1765294080709",
-      "useCaseId": "1765293855512",
-      "title": "Submit Outline",
-      "isMilestone": true,
-      "notes": "",
-      "date": "2025-12-08"
-    },
-    {
-      "id": "1765294132168",
-      "useCaseId": "1765293855512",
-      "title": "Review Outline",
-      "isMilestone": false,
-      "notes": "",
-      "startDate": "2025-12-09",
-      "endDate": "2025-12-11"
-    },
-    {
-      "id": "1765294166536",
-      "useCaseId": "1765293855512",
-      "title": "Phase 2 decision",
-      "isMilestone": true,
-      "notes": "",
-      "date": "2025-12-12"
-    },
-    {
       "id": "1765294390596",
       "useCaseId": "1765294365726",
       "title": "Christmas Holiday",
@@ -585,5 +553,5 @@
       "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-02-05T10:20:42.738Z"
+  "lastSync": "2026-02-05T10:27:19.994Z"
 }
