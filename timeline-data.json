@@ -129,13 +129,6 @@
       "endDate": "2026-05-01"
     },
     {
-      "id": "1765295673141",
-      "cohort": "UC-3XX",
-      "name": "Phase 2 Evaluation",
-      "startDate": "2026-05-04",
-      "endDate": "2026-05-17"
-    },
-    {
       "id": "1765786916795",
       "cohort": "UC-1XX 2",
       "name": "Review draft P4 reports",
@@ -379,7 +372,7 @@
       "title": "Submit outline",
       "isMilestone": true,
       "notes": "",
-      "date": "2025-12-15"
+      "date": "2026-01-23"
     },
     {
       "id": "1765294470591",
@@ -387,8 +380,8 @@
       "title": "Review outlines",
       "isMilestone": false,
       "notes": "",
-      "startDate": "2025-12-16",
-      "endDate": "2025-12-18"
+      "startDate": "2026-01-23",
+      "endDate": "2026-01-26"
     },
     {
       "id": "1765294489490",
@@ -396,7 +389,7 @@
       "title": "Phase 2 decision",
       "isMilestone": true,
       "notes": "",
-      "date": "2025-12-19"
+      "date": "2026-01-26"
     },
     {
       "id": "1765294657554",
@@ -439,16 +432,16 @@
       "title": "Mid-term Review",
       "isMilestone": false,
       "notes": "",
-      "startDate": "2026-03-02",
-      "endDate": "2026-03-06"
+      "startDate": "2026-03-30",
+      "endDate": "2026-04-03"
     },
     {
       "id": "1765295581668",
       "useCaseId": "1765294026550",
-      "title": "Submit P2 proposal",
+      "title": "Submit P2 proposal Mid-Term Review",
       "isMilestone": true,
       "notes": "",
-      "date": "2026-04-27"
+      "date": "2026-03-29"
     },
     {
       "id": "1765295719723",
@@ -573,7 +566,24 @@
       "notes": "",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18"
+    },
+    {
+      "id": "1770286530452",
+      "useCaseId": "1765294026550",
+      "title": "Submit P2 Proposal",
+      "isMilestone": true,
+      "notes": "",
+      "date": "2026-05-17"
+    },
+    {
+      "id": "1770286813255",
+      "useCaseId": "1765294026550",
+      "title": "Prepare P2 Evaluation",
+      "isMilestone": false,
+      "notes": "- Approach Evaluators & Schedule Call",
+      "startDate": "2026-04-13",
+      "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-02-03T15:34:41.141Z"
+  "lastSync": "2026-02-05T10:20:42.738Z"
 }
