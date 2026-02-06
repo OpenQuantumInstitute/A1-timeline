@@ -15,13 +15,6 @@
       "description": ""
     },
     {
-      "id": "1765293855512",
-      "name": "UC-202",
-      "cohort": "UC-2XX",
-      "color": "#669c35",
-      "description": ""
-    },
-    {
       "id": "1765293887777",
       "name": "UC-104",
       "cohort": "UC-1XX 2",
@@ -127,13 +120,6 @@
       "name": "Send P3 Evaluation Feedback",
       "startDate": "2026-04-29",
       "endDate": "2026-05-01"
-    },
-    {
-      "id": "1765295673141",
-      "cohort": "UC-3XX",
-      "name": "Phase 2 Evaluation",
-      "startDate": "2026-05-04",
-      "endDate": "2026-05-17"
     },
     {
       "id": "1765786916795",
@@ -340,31 +326,6 @@
       "endDate": "2026-02-03"
     },
     {
-      "id": "1765294080709",
-      "useCaseId": "1765293855512",
-      "title": "Submit Outline",
-      "isMilestone": true,
-      "notes": "",
-      "date": "2025-12-08"
-    },
-    {
-      "id": "1765294132168",
-      "useCaseId": "1765293855512",
-      "title": "Review Outline",
-      "isMilestone": false,
-      "notes": "",
-      "startDate": "2025-12-09",
-      "endDate": "2025-12-11"
-    },
-    {
-      "id": "1765294166536",
-      "useCaseId": "1765293855512",
-      "title": "Phase 2 decision",
-      "isMilestone": true,
-      "notes": "",
-      "date": "2025-12-12"
-    },
-    {
       "id": "1765294390596",
       "useCaseId": "1765294365726",
       "title": "Christmas Holiday",
@@ -379,7 +340,7 @@
       "title": "Submit outline",
       "isMilestone": true,
       "notes": "",
-      "date": "2025-12-15"
+      "date": "2026-01-23"
     },
     {
       "id": "1765294470591",
@@ -387,8 +348,8 @@
       "title": "Review outlines",
       "isMilestone": false,
       "notes": "",
-      "startDate": "2025-12-16",
-      "endDate": "2025-12-18"
+      "startDate": "2026-01-23",
+      "endDate": "2026-01-26"
     },
     {
       "id": "1765294489490",
@@ -396,7 +357,7 @@
       "title": "Phase 2 decision",
       "isMilestone": true,
       "notes": "",
-      "date": "2025-12-19"
+      "date": "2026-01-26"
     },
     {
       "id": "1765294657554",
@@ -439,16 +400,16 @@
       "title": "Mid-term Review",
       "isMilestone": false,
       "notes": "",
-      "startDate": "2026-03-02",
-      "endDate": "2026-03-06"
+      "startDate": "2026-03-30",
+      "endDate": "2026-04-03"
     },
     {
       "id": "1765295581668",
       "useCaseId": "1765294026550",
-      "title": "Submit P2 proposal",
+      "title": "Submit P2 proposal Mid-Term Review",
       "isMilestone": true,
       "notes": "",
-      "date": "2026-04-27"
+      "date": "2026-03-29"
     },
     {
       "id": "1765295719723",
@@ -573,7 +534,24 @@
       "notes": "",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18"
+    },
+    {
+      "id": "1770286530452",
+      "useCaseId": "1765294026550",
+      "title": "Submit P2 Proposal",
+      "isMilestone": true,
+      "notes": "",
+      "date": "2026-05-17"
+    },
+    {
+      "id": "1770286813255",
+      "useCaseId": "1765294026550",
+      "title": "Prepare P2 Evaluation",
+      "isMilestone": false,
+      "notes": "- Approach Evaluators & Schedule Call",
+      "startDate": "2026-04-13",
+      "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-02-06T13:36:51.727Z"
+  "lastSync": "2026-02-06T17:45:15.031Z"
 }
