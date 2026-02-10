@@ -279,15 +279,15 @@
       "id": "1765788260889",
       "cohort": "UC-1XX",
       "name": "P4 Evaluation",
-      "startDate": "2026-04-24",
-      "endDate": "2026-05-17"
+      "startDate": "2026-05-11",
+      "endDate": "2026-06-01"
     },
     {
       "id": "1765788306780",
       "cohort": "UC-1XX",
       "name": "Send P4 Evaluation Feedback",
-      "startDate": "2026-05-20",
-      "endDate": "2026-05-22"
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-05"
     },
     {
       "id": "1769529792547",
@@ -425,7 +425,7 @@
       "title": "Submit P4 Report",
       "isMilestone": true,
       "notes": "",
-      "date": "2026-04-24"
+      "date": "2026-05-09"
     },
     {
       "id": "1765788442788",
@@ -532,8 +532,8 @@
       "title": "[Blocker] UC-1xx - Phase 4 Internal Evaluation Call",
       "isMilestone": false,
       "notes": "",
-      "startDate": "2026-05-18",
-      "endDate": "2026-05-18"
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29"
     },
     {
       "id": "1770286530452",
@@ -553,5 +553,5 @@
       "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-02-06T17:45:15.031Z"
+  "lastSync": "2026-02-10T15:14:13.570Z"
 }
