@@ -17,4 +17,8 @@ You can now pull and push from Github, as well as sync the subscription calendar
 
 # Calendar subscription
 Get the calendar including all tasks and evaluation period, by subscribing to the following url in your calendar application:
+https://us06web.zoom.us/j/81540569873?pwd=JzNJUdFkvHX1DTLorUV1wHCK0eLkMK.1&from=addon
+
+Go to the browser version of outlook.
+Click on calendar, then click on add to calendar and the "Subscribe from Web" - put the calendar url as provided.
 
