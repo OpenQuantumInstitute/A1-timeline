@@ -77,7 +77,7 @@
       "cohort": "UC-2XX",
       "name": "P2 Evaluation",
       "startDate": "2026-02-02",
-      "endDate": "2026-02-16"
+      "endDate": "2026-03-01"
     },
     {
       "id": "1765295006784",
@@ -295,6 +295,27 @@
       "name": "Outline review",
       "startDate": "2026-01-25",
       "endDate": "2026-01-27"
+    },
+    {
+      "id": "1772465417229",
+      "cohort": "UC-3XX",
+      "name": "P2 Evaluation",
+      "startDate": "2026-05-18",
+      "endDate": "2026-06-07"
+    },
+    {
+      "id": "1772465503907",
+      "cohort": "UC-3XX",
+      "name": "Call with P2 Evaluators",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-07"
+    },
+    {
+      "id": "1772465569666",
+      "cohort": "UC-3XX",
+      "name": "Send P2 Evaluation Feedback",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-09"
     }
   ],
   "tasks": [
@@ -553,5 +574,5 @@
       "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-03-02T15:26:45.079Z"
+  "lastSync": "2026-03-02T15:34:33.375Z"
 }
