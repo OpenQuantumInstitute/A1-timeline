@@ -8,13 +8,6 @@
       "description": ""
     },
     {
-      "id": "1765293822420",
-      "name": "UC-201",
-      "cohort": "UC-2XX",
-      "color": "#4f7a28",
-      "description": ""
-    },
-    {
       "id": "1765293887777",
       "name": "UC-104",
       "cohort": "UC-1XX 2",
@@ -61,6 +54,13 @@
       "name": "UC-205",
       "cohort": "UC-2XX 2",
       "color": "#a633db",
+      "description": ""
+    },
+    {
+      "id": "1772533089137",
+      "name": "UC-201",
+      "cohort": "UC-2XX 2",
+      "color": "#3498db",
       "description": ""
     }
   ],
@@ -316,6 +316,48 @@
       "name": "Send P2 Evaluation Feedback",
       "startDate": "2026-06-08",
       "endDate": "2026-06-09"
+    },
+    {
+      "id": "1772807241753",
+      "cohort": "UC-3XX",
+      "name": "Submit P2 Full Proposal",
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-17"
+    },
+    {
+      "id": "1772807283870",
+      "cohort": "UC-2XX 2",
+      "name": "Resubmit P2 Full Proposal",
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-17"
+    },
+    {
+      "id": "1772807330868",
+      "cohort": "UC-2XX 2",
+      "name": "P2 Reevaluation",
+      "startDate": "2026-05-18",
+      "endDate": "2026-06-07"
+    },
+    {
+      "id": "1772807486059",
+      "cohort": "UC-2XX 2",
+      "name": "Submit P3 Report",
+      "startDate": "2026-12-06",
+      "endDate": "2026-12-06"
+    },
+    {
+      "id": "1772807528872",
+      "cohort": "UC-2XX 2",
+      "name": "P3 Report Evaluation",
+      "startDate": "2026-12-07",
+      "endDate": "2026-12-18"
+    },
+    {
+      "id": "1772807601672",
+      "cohort": "UC-2XX 2",
+      "name": "Send P3 Evaluation Feedback",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18"
     }
   ],
   "tasks": [
@@ -397,23 +439,6 @@
       "notes": "CL in NY",
       "startDate": "2026-01-26",
       "endDate": "2026-01-26"
-    },
-    {
-      "id": "1765294776163",
-      "useCaseId": "1765293822420",
-      "title": "Submit Proposal",
-      "isMilestone": true,
-      "notes": "",
-      "date": "2026-02-02"
-    },
-    {
-      "id": "1765294926113",
-      "useCaseId": "1765293822420",
-      "title": "Compile feedback",
-      "isMilestone": false,
-      "notes": "",
-      "startDate": "2026-02-17",
-      "endDate": "2026-02-20"
     },
     {
       "id": "1765295289874",
@@ -574,5 +599,5 @@
       "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-03-03T10:17:12.634Z"
+  "lastSync": "2026-03-06T14:33:40.743Z"
 }
