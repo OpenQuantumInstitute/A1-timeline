@@ -36,20 +36,6 @@
       "description": ""
     },
     {
-      "id": "1765294026550",
-      "name": "UC-301",
-      "cohort": "UC-3XX",
-      "color": "#7b219f",
-      "description": ""
-    },
-    {
-      "id": "1765294365726",
-      "name": "Team",
-      "cohort": "OQI",
-      "color": "#008cb4",
-      "description": ""
-    },
-    {
       "id": "1772469531555",
       "name": "UC-205",
       "cohort": "UC-2XX 2",
@@ -61,6 +47,20 @@
       "name": "UC-201",
       "cohort": "UC-2XX 2",
       "color": "#3498db",
+      "description": ""
+    },
+    {
+      "id": "1765294026550",
+      "name": "UC-301",
+      "cohort": "UC-3XX",
+      "color": "#7b219f",
+      "description": ""
+    },
+    {
+      "id": "1765294365726",
+      "name": "Team",
+      "cohort": "OQI",
+      "color": "#008cb4",
       "description": ""
     }
   ],
