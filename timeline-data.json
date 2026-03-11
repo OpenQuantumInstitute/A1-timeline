@@ -164,13 +164,6 @@
       "endDate": "2026-08-20"
     },
     {
-      "id": "1765787356024",
-      "cohort": "UC-3XX",
-      "name": "Review P3 Draft report",
-      "startDate": "2026-08-02",
-      "endDate": "2026-08-04"
-    },
-    {
       "id": "1765787418582",
       "cohort": "UC-2XX",
       "name": "Submit P3 Report",
@@ -211,13 +204,6 @@
       "name": "Send P3 Evaluation Feedback",
       "startDate": "2026-09-14",
       "endDate": "2026-09-15"
-    },
-    {
-      "id": "1765787666279",
-      "cohort": "UC-3XX",
-      "name": "Review draft P4 report",
-      "startDate": "2026-11-02",
-      "endDate": "2026-11-05"
     },
     {
       "id": "1765787717236",
@@ -585,5 +571,5 @@
       "endDate": "2026-04-26"
     }
   ],
-  "lastSync": "2026-03-11T10:54:50.025Z"
+  "lastSync": "2026-03-11T10:55:30.386Z"
 }
