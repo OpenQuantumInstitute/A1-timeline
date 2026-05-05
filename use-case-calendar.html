@@ -831,7 +831,7 @@
                             Pull from GitHub
                         </div>
                         <div class="settings-menu-item" onclick="closeSettingsMenu(); syncCalendarToGitHub();" id="syncCalendarMenuItem" style="display: none;">
-                            📅 Sync Calendar to GitHub
+                            Sync Calendar to GitHub
                         </div>
                     </div>
                 </div>
@@ -882,7 +882,7 @@
 
                 <!-- Calendar Subscription Section -->
                 <div class="calendar-info-section" id="calendarInfoSection" style="display: none;">
-                    <h3 class="upcoming-title">📅 Calendar Subscription</h3>
+                    <h3 class="upcoming-title">Calendar Subscription</h3>
                     <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 16px; margin-top: 12px;">
                         <p style="margin: 0 0 12px 0; font-size: 14px; color: #666;">
                             Subscribe to this URL in your calendar app to receive automatic updates:
@@ -895,9 +895,6 @@
                                 Copy URL
                             </button>
                         </div>
-                        <p style="margin: 12px 0 0 0; font-size: 12px; color: #999;">
-                            Compatible with Google Calendar, Apple Calendar, Outlook, and other iCal-compatible apps.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -910,7 +907,6 @@
                 </div>
                 <div class="task-detail-panel" id="taskDetailPanel">
                     <div class="empty-state">
-                        <div class="empty-state-icon">📋</div>
                         <div class="empty-state-text">Select a cohort to view use cases and tasks</div>
                     </div>
                 </div>
@@ -3011,7 +3007,7 @@
                 console.log('Commit SHA:', result.commit?.sha);
 
                 // Show success with subscription URL
-                alert(`✅ Calendar synced to GitHub!\n\nBranch: ${gitSettings.branch}\nCommit: ${result.commit?.sha?.substring(0, 7) || 'N/A'}\n\n📅 Calendar Subscription URL:\n${subscribeUrl}\n\nCopy this URL and add it to your calendar app.\n\nThe calendar includes:\n- ${tasks.length} tasks\n- ${evaluationPeriods.length * 2} evaluation period events (start/end)`);
+                alert(`Calendar synced to GitHub!\n\nBranch: ${gitSettings.branch}\nCommit: ${result.commit?.sha?.substring(0, 7) || 'N/A'}\n\nCalendar Subscription URL:\n${subscribeUrl}\n\nCopy this URL and add it to your calendar app.\n\nThe calendar includes:\n- ${tasks.length} tasks\n- ${evaluationPeriods.length * 2} evaluation period events (start/end)`);
 
                 // Store the subscription URL
                 localStorage.setItem('calendarSubscriptionUrl', subscribeUrl);
@@ -3028,7 +3024,7 @@
                 alert(`❌ Failed to sync calendar:\n\n${error.message}`);
             } finally {
                 if (syncBtn) {
-                    syncBtn.textContent = '📅 Sync Calendar to GitHub';
+                    syncBtn.textContent = 'Sync Calendar to GitHub';
                     syncBtn.disabled = false;
                 }
             }
