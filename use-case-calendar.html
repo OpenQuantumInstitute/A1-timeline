@@ -305,6 +305,7 @@
             height: 40px;
             display: flex;
             align-items: center;
+            overflow: hidden;
         }
 
         .timeline-bar {
@@ -1373,7 +1374,26 @@
                     </div>
                     <div class="use-case-cohort" style="color: #666;">${cohortPeriods.length} evaluation period${cohortPeriods.length !== 1 ? 's' : ''}</div>
                 </div>`;
-                html += '<div class="timeline-bars" style="height: 60px; position: relative;">';
+                // Assign each evaluation period to the first non-conflicting lane
+                const periodBarH = 32;
+                const periodBarGap = 4;
+                const periodLaneOccupied = [];
+                const periodLanes = cohortPeriods.map(period => {
+                    const s = new Date(period.startDate).getTime();
+                    const e = new Date(period.endDate).getTime();
+                    let lane = 0;
+                    while (true) {
+                        if (!periodLaneOccupied[lane]) periodLaneOccupied[lane] = [];
+                        const hasConflict = periodLaneOccupied[lane].some(([ls, le]) => s < le && e > ls);
+                        if (!hasConflict) { periodLaneOccupied[lane].push([s, e]); break; }
+                        lane++;
+                    }
+                    return lane;
+                });
+                const numPeriodLanes = Math.max(1, periodLaneOccupied.length);
+                const cohortBarsH = numPeriodLanes * (periodBarH + periodBarGap);
+
+                html += `<div class="timeline-bars" style="height: ${cohortBarsH}px; position: relative;">`;
                 
                 // Add cohort evaluation periods with improved tooltips
                 cohortPeriods.forEach((period, index) => {
@@ -1381,7 +1401,7 @@
                     const end = new Date(period.endDate);
                     const leftPercent = ((start - startDate) / (endDate - startDate)) * 100;
                     const widthPercent = ((end - start) / (endDate - startDate)) * 100;
-                    const topOffset = (index % 2) * 32;
+                    const topOffset = periodLanes[index] * (periodBarH + periodBarGap);
                     
                     const tooltipText = `${period.name}|||${start.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} - ${end.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
                     
@@ -1406,7 +1426,26 @@
                         <div class="use-case-name" style="font-size: 13px;">${useCase.name}</div>
                         <div class="use-case-cohort" style="font-size: 11px; color: #999;">${milestones.length} milestone${milestones.length !== 1 ? 's' : ''}, ${regularTasks.length} task${regularTasks.length !== 1 ? 's' : ''}</div>
                     </div>`;
-                    html += '<div class="timeline-bars" style="height: 50px; position: relative;">';
+                    // Assign regular tasks to non-conflicting lanes
+                    const taskBarH = 18;
+                    const taskBarGap = 4;
+                    const taskLaneOccupied = [];
+                    const taskLanes = regularTasks.map(task => {
+                        const s = new Date(task.startDate).getTime();
+                        const e = new Date(task.endDate).getTime() || s + 1;
+                        let lane = 0;
+                        while (true) {
+                            if (!taskLaneOccupied[lane]) taskLaneOccupied[lane] = [];
+                            const hasConflict = taskLaneOccupied[lane].some(([ls, le]) => s < le && e > ls);
+                            if (!hasConflict) { taskLaneOccupied[lane].push([s, e]); break; }
+                            lane++;
+                        }
+                        return lane;
+                    });
+                    const numTaskLanes = Math.max(1, taskLaneOccupied.length);
+                    const ucBarsH = Math.max(50, numTaskLanes * (taskBarH + taskBarGap) + 16);
+
+                    html += `<div class="timeline-bars" style="height: ${ucBarsH}px; position: relative;">`;
                     
                     // Show cohort periods as subtle background context
                     cohortPeriods.forEach(period => {
@@ -1426,14 +1465,14 @@
                         const widthPercent = ((end - start) / (endDate - startDate)) * 100;
                         const isMultiDay = task.startDate !== task.endDate;
                         const displayWidth = isMultiDay ? Math.max(widthPercent, 2) : 2;
-                        const topOffset = (idx % 2) * 22;
+                        const topOffset = taskLanes[idx] * (taskBarH + taskBarGap) + 8;
                         
                         const dateStr = start.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
                         const dateRange = isMultiDay ? `${dateStr} - ${end.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}` : dateStr;
                         const tooltipText = `${task.title}|||${dateRange}${task.notes ? '|||' + task.notes : ''}`;
                         
                         html += `<div class="timeline-bar" 
-                            style="left: ${leftPercent}%; width: ${displayWidth}%; background: ${useCase.color}BB; top: ${topOffset}px; height: 18px; font-size: 10px;"
+                            style="left: ${leftPercent}%; width: ${displayWidth}%; background: ${useCase.color}BB; top: ${topOffset}px; height: ${taskBarH}px; font-size: 10px;"
                             onmouseenter="showTooltip(event, '${tooltipText.replace(/'/g, "\\'")}', 'task')"
                             onmouseleave="hideTooltip()">
                             ${isMultiDay ? task.title : ''}
