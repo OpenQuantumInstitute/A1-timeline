@@ -118,8 +118,8 @@
       "id": "1765786984302",
       "cohort": "UC-2XX",
       "name": "Prepare P3 reports evaluations",
-      "startDate": "2026-06-29",
-      "endDate": "2026-07-02"
+      "startDate": "2026-07-03",
+      "endDate": "2026-08-03"
     },
     {
       "id": "1765787026758",
@@ -478,5 +478,5 @@
       "endDate": "2026-06-22"
     }
   ],
-  "lastSync": "2026-06-30T14:22:15.794Z"
+  "lastSync": "2026-07-02T15:19:50.668Z"
 }
